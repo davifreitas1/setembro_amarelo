@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal : ;
+}
+
+@font-face {
+  font-family: texGyreTermes;
+  src: url(./fonts/texgyretermes-regular.otf);
+}
+
+body {
+    font-family: textGyreTermes;
+}
+
+.banner {
+    height: 100vh;
+    padding: 40px;
+    scroll-margin-top: 80px;
+}
