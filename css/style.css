@@ -1,11 +1,15 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --cor-principal : ;
+  --cor-principal: #f2b441;
+  --cor-secundaria: #f2e8d5;
+  --cor-texto: #402b11;
+  --cor-detalhes: #8c7d32;
+  --cor-verde: #6d7340;
 }
 
 @font-face {
@@ -14,11 +18,11 @@
 }
 
 body {
-    font-family: textGyreTermes;
+  font-family: textGyreTermes;
 }
 
 .banner {
-    height: 100vh;
-    padding: 40px;
-    scroll-margin-top: 80px;
+  height: 100vh;
+  padding: 40px;
+  scroll-margin-top: 80px;
 }
