@@ -18,26 +18,32 @@
 }
 
 body {
-  font-family: textGyreTermes;
+  font-family: texGyreTermes;
 }
 
 header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
-  background-color: var(--cor-principal);
+  background-color: var(--cor-secundaria);
+  z-index: 1000;
 }
 
 nav {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 nav a {
   display: inline-block;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 5px;
   color: var(--cor-texto);
 }
 
@@ -52,12 +58,57 @@ nav a {
 }
 
 .menu-mobile-bar {
-  height: 1px;
+  height: 2px;
   background-color: var(--cor-texto);
 }
 
 .banner {
-  height: 100vh;
-  padding: 40px;
+  height: 200vh;
   scroll-margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.service {
+  width: 350px;
+  height: 40px;
+  margin: 30px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-verde);
+  color: var(--cor-secundaria);
+  border-radius: 20px;
+}
+
+.service p {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.service button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  align-self: flex-end;
+  margin-right: 5px;
+  background-color: var(--cor-secundaria);
+  border-width: 0;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: 540;
+  color: var(--cor-verde);
+}
+
+#banner-image {
+  height: 600px;
+  width: 100%;
+  background-image: url(../img/Setembro\ Amarelo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: right;
 }
