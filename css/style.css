@@ -21,6 +21,41 @@ body {
   font-family: textGyreTermes;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: var(--cor-principal);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--cor-texto);
+}
+
+.menu-mobile {
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-mobile-bar {
+  height: 1px;
+  background-color: var(--cor-texto);
+}
+
 .banner {
   height: 100vh;
   padding: 40px;
