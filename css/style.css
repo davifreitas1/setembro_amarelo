@@ -20,6 +20,7 @@
 
 body {
   font-family: texGyreTermes;
+  background: var(--cor-secundaria);
 }
 
 header {
@@ -169,4 +170,20 @@ nav a {
   font-size: 4rem;
   text-align: center;
   line-height: 5rem;
+}
+
+/* Campanha setembro amarelo */
+
+.Campanha {
+  text-align: center;
+  padding: 20px;
+}
+
+.Campanha h1 {
+  font-family: 700;
+  font-size: 3.5rem;
+}
+
+.Campanha p {
+  font-size: 2rem;
 }
