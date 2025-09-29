@@ -10,6 +10,8 @@
   --cor-texto: #402b11;
   --cor-detalhes: #8c7d32;
   --cor-verde: #6d7340;
+  --cor-black: #000000;
+  --font-h1: 3rem;
 }
 
 @font-face {
@@ -18,11 +20,223 @@
 }
 
 body {
-  font-family: textGyreTermes;
+  font-family: texGyreTermes;
+  background: var(--cor-secundaria);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: var(--cor-secundaria);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 5px;
+  color: var(--cor-texto);
+}
+
+.menu-mobile {
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-mobile-bar {
+  height: 2px;
+  background-color: var(--cor-texto);
 }
 
 .banner {
-  height: 100vh;
-  padding: 40px;
+  height: 200vh;
   scroll-margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.service {
+  width: 350px;
+  height: 40px;
+  margin: 30px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-verde);
+  color: var(--cor-secundaria);
+  border-radius: 20px;
+}
+
+.service p {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.service button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  align-self: flex-end;
+  margin-right: 5px;
+  background-color: var(--cor-secundaria);
+  border-width: 0;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: 540;
+  color: var(--cor-verde);
+}
+
+/* banner configcss */
+
+#banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--cor-principal);
+  height: 460px;
+  margin: 20px 0px;
+}
+#banner-image {
+  /* height: auto; */
+  /* background-image: url(../img/Setembro\ Amarelo.png); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: right; */
+  line-height: 4.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.banner-text {
+  background-color: var(--cor-verde);
+  width: 100%;
+  text-align: center;
+  border-radius: 0px 0px 30px 0px;
+  padding: 50px;
+}
+
+.banner-text h3 {
+  color: var(--cor-principal);
+  font-size: var(--font-h1);
+  font-weight: 500;
+}
+
+.banner-text p {
+  color: var(--cor-secundaria);
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.banner-text h1 {
+  color: var(--cor-black);
+  font-size: 4.5rem;
+  font-weight: 300;
+}
+
+.banner-all {
+  padding: 25px;
+  background: var(--cor-principal) url(/img/10136534.png) center top/cover
+    no-repeat content-box;
+}
+
+.banner-all h1 {
+  border-top: var(--cor-texto) solid 3px;
+  border-bottom: var(--cor-texto) solid 3px;
+  color: var(--cor-black);
+  width: 300px;
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: center;
+  line-height: 5rem;
+}
+
+/* Campanha setembro amarelo */
+
+.Campanha {
+  text-align: center;
+  padding: 20px;
+}
+
+.Campanha h1 {
+  font-family: 700;
+  font-size: 3.5rem;
+}
+
+.Campanha p {
+  font-size: 2rem;
+}
+
+/* Cards prevenção */
+
+.title-pre {
+  color: var(--cor-detalhes);
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 30px;
+}
+
+.prevencao-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px;
+}
+
+article .title {
+  margin-bottom: 20px;
+}
+.conscientizacao {
+  background: var(--cor-verde);
+  color: var(--cor-secundaria);
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  line-height: 1.8rem;
+  height: 320px;
+}
+
+.Prevencao {
+  background: var(--cor-detalhes);
+  color: var(--cor-secundaria);
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  line-height: 1.5rem;
+  height: 320px;
+}
+
+.acolhimento {
+  background: var(--cor-principal);
+  color: var(--cor-secundaria);
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  line-height: 1.8rem;
+  height: 320px;
 }
