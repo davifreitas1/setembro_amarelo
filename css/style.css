@@ -10,6 +10,7 @@
   --cor-texto: #402b11;
   --cor-detalhes: #8c7d32;
   --cor-verde: #6d7340;
+  --cor-black: #000000;
   --font-h1: 3rem;
 }
 
@@ -150,7 +151,7 @@ nav a {
 }
 
 .banner-text h1 {
-  color: var(--cor-texto);
+  color: var(--cor-black);
   font-size: 4.5rem;
   font-weight: 300;
 }
@@ -164,7 +165,7 @@ nav a {
 .banner-all h1 {
   border-top: var(--cor-texto) solid 3px;
   border-bottom: var(--cor-texto) solid 3px;
-  color: var(--cor-texto);
+  color: var(--cor-black);
   width: 300px;
   font-weight: 700;
   font-size: 4rem;
@@ -186,4 +187,56 @@ nav a {
 
 .Campanha p {
   font-size: 2rem;
+}
+
+/* Cards prevenção */
+
+.title-pre {
+  color: var(--cor-detalhes);
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 30px;
+}
+
+.prevencao-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px;
+}
+
+article .title {
+  margin-bottom: 20px;
+}
+.conscientizacao {
+  background: var(--cor-verde);
+  color: var(--cor-secundaria);
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  line-height: 1.8rem;
+  height: 320px;
+}
+
+.Prevencao {
+  background: var(--cor-detalhes);
+  color: var(--cor-secundaria);
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  line-height: 1.5rem;
+  height: 320px;
+}
+
+.acolhimento {
+  background: var(--cor-principal);
+  color: var(--cor-secundaria);
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  line-height: 1.8rem;
+  height: 320px;
 }
