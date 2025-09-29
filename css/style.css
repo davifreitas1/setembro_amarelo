@@ -10,6 +10,7 @@
   --cor-texto: #402b11;
   --cor-detalhes: #8c7d32;
   --cor-verde: #6d7340;
+  --font-h1: 3rem;
 }
 
 @font-face {
@@ -103,12 +104,69 @@ nav a {
   color: var(--cor-verde);
 }
 
+/* banner configcss */
+
+#banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--cor-principal);
+  height: 460px;
+  margin: 20px 0px;
+}
 #banner-image {
-  height: 600px;
-  width: 100%;
-  background-image: url(../img/Setembro\ Amarelo.png);
-  background-repeat: no-repeat;
+  /* height: auto; */
+  /* background-image: url(../img/Setembro\ Amarelo.png); */
+  /* background-repeat: no-repeat;
   background-size: cover;
   background-position-y: bottom;
-  background-position-x: right;
+  background-position-x: right; */
+  line-height: 4.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.banner-text {
+  background-color: var(--cor-verde);
+  width: 100%;
+  text-align: center;
+  border-radius: 0px 0px 30px 0px;
+  padding: 50px;
+}
+
+.banner-text h3 {
+  color: var(--cor-principal);
+  font-size: var(--font-h1);
+  font-weight: 500;
+}
+
+.banner-text p {
+  color: var(--cor-secundaria);
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.banner-text h1 {
+  color: var(--cor-texto);
+  font-size: 4.5rem;
+  font-weight: 300;
+}
+
+.banner-all {
+  padding: 25px;
+  background: var(--cor-principal) url(/img/10136534.png) center top/cover
+    no-repeat content-box;
+}
+
+.banner-all h1 {
+  border-top: var(--cor-texto) solid 3px;
+  border-bottom: var(--cor-texto) solid 3px;
+  color: var(--cor-texto);
+  width: 300px;
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: center;
+  line-height: 5rem;
 }
